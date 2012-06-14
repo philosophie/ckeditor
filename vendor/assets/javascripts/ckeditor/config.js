@@ -6,7 +6,7 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 CKEDITOR.editorConfig = function( config )
 {
   // Define changes to default configuration here. For example:
-  // config.language = 'fr';
+  config.language = 'en';
   // config.uiColor = '#AADC6E';
   
   /* Filebrowser routes */
@@ -78,20 +78,17 @@ CKEDITOR.editorConfig = function( config )
   
   /* Extra plugins */
   // works only with en, ru, uk locales
-  config.extraPlugins = "embed,attachment";
+  // config.extraPlugins = "embed,attachment";
   
   /* Toolbars */
-  config.toolbar = 'Easy';
+  config.toolbar = 'Rundown';
   
-  config.toolbar_Easy =
+  config.toolbar_Rundown =
     [
-        ['Source','-','Preview'],
-        ['Cut','Copy','Paste','PasteText','PasteFromWord',],
-        ['Undo','Redo','-','SelectAll','RemoveFormat'],
-        ['Styles','Format'], ['Subscript', 'Superscript', 'TextColor'], ['Maximize','-','About'], '/',
-        ['Bold','Italic','Underline','Strike'], ['NumberedList','BulletedList','-','Outdent','Indent','Blockquote'],
-        ['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
-        ['Link','Unlink','Anchor'], ['Image', 'Attachment', 'Flash', 'Embed'],
-        ['Table','HorizontalRule','Smiley','SpecialChar','PageBreak']
+        ['Maximize'], ['Undo','Redo'],
+        ['Paste','PasteText','PasteFromWord',],
+        ['Image', '-', 'SpecialChar'],
+        ['Bold','Italic','Underline','Strike','-','Subscript', 'Superscript', 'TextColor'],
+        ['NumberedList','BulletedList'],['Link','Unlink']
     ];
 };
