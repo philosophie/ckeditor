@@ -80,15 +80,18 @@ CKEDITOR.editorConfig = function( config )
   // works only with en, ru, uk locales
   // config.extraPlugins = "embed,attachment";
   
+  // make enter create BR
+  config.enterMode = CKEDITOR.ENTER_BR;
+  
   /* Toolbars */
   config.toolbar = 'Rundown';
   
   config.toolbar_Rundown =
     [
-        ['Maximize'], ['Undo','Redo'],
+        ['Maximize', '-', 'Source'], ['Undo','Redo'],
         ['Paste','PasteText','PasteFromWord',],
         ['Image', '-', 'SpecialChar'],
-        ['Bold','Italic','Underline','Strike','-','Subscript', 'Superscript', 'TextColor'],
+        ['Bold','Italic','Underline','Strike','-','FontSize','Subscript', 'Superscript', 'TextColor'],
         ['NumberedList','BulletedList'],['Link','Unlink']
     ];
 };
