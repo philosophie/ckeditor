@@ -88,7 +88,7 @@ CKEDITOR.editorConfig = function( config )
   
   config.toolbar_Rundown =
     [
-        ['Maximize', '-', 'Source'], ['Undo','Redo'],
+        ['Maximize', '-', 'Source', 'SCAYT'],
         ['Paste','PasteText','PasteFromWord',],
         ['Image', '-', 'SpecialChar'],
         ['Bold','Italic','Underline','Strike','-','FontSize','Subscript', 'Superscript', 'TextColor'],
