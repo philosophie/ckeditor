@@ -95,6 +95,7 @@ CKEDITOR.editorConfig = function( config )
         ['Paste','PasteText','PasteFromWord',],
         ['Image', '-', 'SpecialChar'],
         ['Bold','Italic','Underline','Strike','-','FontSize','Subscript', 'Superscript', 'TextColor'],
+        ['JustifyLeft','JustifyCenter','JustifyRight'],
         ['NumberedList','BulletedList'],['Link','Unlink'],
         ['Table','HorizontalRule']
     ];
